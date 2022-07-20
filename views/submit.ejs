@@ -1,0 +1,19 @@
+<%- include('partials/header') -%>
+
+    <main class="container">
+        <div class="submit-header title-section flex">
+            <span class="secret-icon fa-brands fa-keycdn"></span>
+            <div class="submit-content">
+                <h1 class="secret-title">Share Your Secrets!</h1>
+                <p class="secret-text"><em>Don't keep your secrets, share them anonymously!</em></p>
+            </div>
+        </div>
+        <div>
+            <form action="/submit" method="POST">
+                <input class="secret-input" type="text" name="secretText" placeholder="What is your secret?">
+                <button class="submit-secret button-dark" type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+
+<%- include('partials/footer') -%>
